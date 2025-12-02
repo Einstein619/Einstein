@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero {
+    background: lightblue;
+    padding: 40px;
+    text-align: center;
+}
+
+.about, .projects {
+    padding: 30px;
+    background-color: rgb(43, 226, 156);
+}
+
+.contact {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
