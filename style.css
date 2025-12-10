@@ -1,36 +1,376 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+ 
+    
+        /* Remove default spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-header {
-    background: #222;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
+        /* Main body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
 
-.hero {
-    background: lightblue;
-    padding: 40px;
-    text-align: center;
-}
+        /* Side navigation - vertical layout */
+        .sidenav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 80px;
+            height: 100vh;
+            background: linear-gradient(180deg, #1abc9c 0%, #16a085 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+            z-index: 1000;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+        }
 
-.about, .projects {
-    padding: 30px;
-    background-color: rgb(43, 226, 156);
-}
+        /* Logo in sidebar */
+        .sidenav .logo {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
 
-.contact {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+        /* Navigation items in sidebar */
+        .sidenav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+
+        /* Hover effect on nav icons */
+        .sidenav a:hover {
+            transform: scale(1.3);
+        }
+
+        /* Main content area - offset from sidebar */
+        .main-content {
+            margin-left: 80px;
+        }
+
+        /* Hero section - split design */
+        .hero {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: white;
+        }
+
+        /* Left side of hero - text content */
+        .hero-left {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Geometric decorations */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .circle1 { width: 300px; height: 300px; top: -100px; right: -50px; }
+        .circle2 { width: 150px; height: 150px; bottom: 50px; left: -50px; }
+        .circle3 { width: 80px; height: 80px; top: 40%; right: 20%; }
+
+        /* Hero heading */
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 30px;
+            z-index: 1;
+            line-height: 1.2;
+        }
+
+        /* Hero paragraph */
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            z-index: 1;
+            opacity: 0.95;
+        }
+
+        /* Button group */
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            z-index: 1;
+        }
+
+        /* Modern button styling */
+        .btn {
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Primary button - teal */
+        .btn-primary {
+            background: #1abc9c;
+            color: white;
+            box-shadow: 0 4px 15px rgba(26,188,156,0.3);
+        }
+
+        .btn-primary:hover {
+            background: #16a085;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26,188,156,0.4);
+        }
+
+        /* Outline button */
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #2980b9;
+        }
+
+        /* Right side of hero - image area */
+        .hero-right {
+            background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            color: rgba(255,255,255,0.3);
+        }
+
+        /* Services section - card layout */
+        .services {
+            padding: 100px 80px;
+            background: #ecf0f1;
+        }
+
+        /* Section heading */
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 60px;
+            color: #2c3e50;
+        }
+
+        /* Service cards container */
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        /* Individual service card */
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Card icon */
+        .card-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        /* Card title */
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        /* Card description */
+        .card p {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+
+        /* Contact section - modern form design */
+        .contact {
+            padding: 100px 80px;
+            background: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+
+        /* Contact info side */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-info h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        /* Info item */
+        .info-item {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .info-item span {
+            font-size: 24px;
+            color: #1abc9c;
+        }
+
+        .info-item p {
+            font-size: 18px;
+            color: #7f8c8d;
+        }
+
+        /* Contact form side */
+        .form-container {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        /* Form inputs */
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            background: rgba(255,255,255,0.95);
+        }
+
+        .form-container textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* Form submit button */
+        .form-container .btn-submit {
+            width: 100%;
+            background: #1abc9c;
+            color: white;
+            padding: 18px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s;
+        }
+
+        .form-container .btn-submit:hover {
+            background: #16a085;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            margin-left: 80px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            /* Hide sidebar on mobile */
+            .sidenav {
+                width: 100%;
+                height: auto;
+                position: relative;
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 20px;
+            }
+
+            .sidenav .logo {
+                margin-bottom: 0;
+            }
+
+            /* Reset main content margin */
+            .main-content {
+                margin-left: 0;
+            }
+
+            /* Stack hero sections */
+            .hero {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+
+            .hero-left {
+                padding: 60px 30px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-right {
+                height: 300px;
+            }
+
+            /* Single column cards */
+            .service-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .services {
+                padding: 60px 30px;
+            }
+
+            /* Stack contact sections */
+            .contact {
+                grid-template-columns: 1fr;
+                padding: 60px 30px;
+                gap: 40px;
+            }
+
+            /* Stack buttons */
+            .btn-group {
+                flex-direction: column;
+            }
+
+            footer {
+                margin-left: 0;
+            }
+        }
+    

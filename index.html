@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding for proper text display -->
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <!-- Makes website responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Clean Sweep - Modern Cleaning Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Side Navigation -->
+    <nav class="sidenav">
+        <div class="logo">🧹</div>
+        <a href="#home" title="Home">🏠</a>
+        <a href="#services" title="Services">✨</a>
+        <a href="#contact" title="Contact">📧</a>
+        <a href="#about" title="About">ℹ</a>
+    </nav>
 
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-            
-        </nav>
-    </header>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-left">
+                <!-- Decorative circles -->
+                <div class="circle circle1"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+                
+                <h1>Where Cleanliness Meets Care</h1>
+                <p>Professional cleaning services that transform your space into a spotless sanctuary.</p>
+                <div class="btn-group">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#contact" class="btn btn-outline">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                ✨
+            </div>
+        </section>
 
-    <section id="home" class="hero">
-        <h2>Hello, I'm a Student Web Developer</h2>
-        <p>Welcome to my  portfolio website.</p>
-    </section>
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <div class="card-icon">🏠</div>
+                    <h3>Home Cleaning</h3>
+                    <p>Complete home cleaning services for a fresh and healthy living environment.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏢</div>
+                    <h3>Office Cleaning</h3>
+                    <p>Professional office cleaning to maintain a productive workspace.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🪟</div>
+                    <h3>Deep Cleaning</h3>
+                    <p>Thorough deep cleaning services for every corner of your property.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a level 200 computer science student at Ghana Communication Technology University (GCTU) learning HTML and CSS. This is one of my school projects.</p>
-    </section>
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <div class="info-item">
+                    <span>📍</span>
+                    <div>
+                        <strong>Address</strong>
+                        <p>Accra, Greater Accra, Ghana</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span>⏰</span>
+                    <div>
+                        <strong>Working Hours</strong>
+                        <p>Mon-Fri: 08:00 - 19:00</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span>📞</span>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+233 594990827</p>
+                    </div>
+                </div>
+            </div>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Portfolio Website</li>
-            <li>School Landing Page</li>
-            <li>Restaurant Menu</li>
-            <li>Product catalog</li>
-            <li>Simple Blog</li>
-        </ul>
-    </section>
+            <div class="form-container">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
 
-    <section id="contact" class="contact">
-      <h4>contact: 0594990827</h4>
-      <p>Email: godsondaniel6194@gamil.com</p>
-    </section>
-
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Clean Sweep. All rights reserved.</p>
+            <p>Accra, Ghana</p>
+        </footer>
+    </div>
 </body>
 </html>
