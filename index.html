@@ -1,111 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character encoding for proper text display -->
-    <meta charset="UTF-8">
-    <!-- Makes website responsive on mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Page title -->
-    <title>Clean Sweep - Modern Cleaning Services</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <script src="java.js"></script>
+  <title>Student Registration</title>
+  <div class="container">
+  </head>
 <body>
-    <!-- Side Navigation -->
-    <nav class="sidenav">
-        <div class="logo">🧹</div>
-        <a href="#home" title="Home">🏠</a>
-        <a href="#services" title="Services">✨</a>
-        <a href="#contact" title="Contact">📧</a>
-        <a href="#about" title="About">ℹ</a>
-    </nav>
+  <h1>GCTU STUDENT REGISTRATION FORM</h1>
+  <h2>Please Register Your Courses</h2>
+  <form id="regForm" onsubmit="return validateForm()">
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="email">
+    <input type="text" placeholder="Programme">
+    <p>Please Select Courses To Register:</p>
+    <label>
+      <input type="checkbox" value="Data Structures">
+      Data Structures
+    </label>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="hero-left">
-                <!-- Decorative circles -->
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                
-                <h1>Where Cleanliness Meets Care</h1>
-                <p>Professional cleaning services that transform your space into a spotless sanctuary.</p>
-                <div class="btn-group">
-                    <a href="#services" class="btn btn-primary">Our Services</a>
-                    <a href="#contact" class="btn btn-outline">Book Now</a>
-                </div>
-            </div>
-            <div class="hero-right">
-                ✨
-            </div>
-        </section>
+      <label>
+      <input type="checkbox" value="Web Programming">
+      Web Programming
+    </label>
 
-        <!-- Services Section -->
-        <section class="services" id="services">
-            <h2 class="section-title">Our Services</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <div class="card-icon">🏠</div>
-                    <h3>Home Cleaning</h3>
-                    <p>Complete home cleaning services for a fresh and healthy living environment.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🏢</div>
-                    <h3>Office Cleaning</h3>
-                    <p>Professional office cleaning to maintain a productive workspace.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🪟</div>
-                    <h3>Deep Cleaning</h3>
-                    <p>Thorough deep cleaning services for every corner of your property.</p>
-                </div>
-            </div>
-        </section>
+       <label>
+      <input type="checkbox" value="System Analysis">
+      System Analysis
+    </label>
 
-        <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <div class="contact-info">
-                <h2>Get In Touch</h2>
-                <div class="info-item">
-                    <span>📍</span>
-                    <div>
-                        <strong>Address</strong>
-                        <p>Accra, Greater Accra, Ghana</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <span>⏰</span>
-                    <div>
-                        <strong>Working Hours</strong>
-                        <p>Mon-Fri: 08:00 - 19:00</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <span>📞</span>
-                    <div>
-                        <strong>Phone</strong>
-                        <p>+233 594990827</p>
-                    </div>
-                </div>
-            </div>
+       <label>
+      <input type="checkbox" value="Data Communication">
+      Date Communication
+    </label>
 
-            <div class="form-container">
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="tel" placeholder="Phone Number" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn-submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2025 Clean Sweep. All rights reserved.</p>
-            <p>Accra, Ghana</p>
-        </footer>
-    </div>
+       <label>
+      <input type="checkbox" value="MicroProcessors And Mircocontrollers">
+      MicroProcessors And Mircocontrollers
+    </label>
+    
+    <button><strong>Register</strong></button>
+    <button id="print"><strong>Print</strong></button>
+   </form>
+  </div>
 </body>
+
 </html>
+
